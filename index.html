@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Panther Hackers</title>
+</head>
+<body>
+    
+    
+    <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script>
+        
+    function addToSpreadSheet(name, email, func){
+        var script_url = "https://script.google.com/macros/s/AKfycbxlDE99VBlCgPxYlGjlA2Qow5RZST9MYn0eyMoyL1lEcj7dgcM/exec";
+        $.ajax({
+            method:'POST',
+            url: script_url,
+            data: {"name":name, "email":email}
+        }).then(function(r){
+            func(r);
+        });   
+    } 
+    </script>
+</body>
+</html>
