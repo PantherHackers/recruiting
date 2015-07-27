@@ -1,0 +1,28 @@
+body {
+    background-color: lightblue;
+    margin: 0;
+    padding: 90;
+    font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+
+.h1 {
+background-color: white;
+margin: 10;
+padding: 90;
+
+}
+
+
+
+.container {
+  padding-bottom: 0px;
+  padding-top: 0px;
+}
+
+div {
+    width: 900px;
+    margin: 5em auto;
+    padding: 50px;
+    background-color: #fff;
+    border-radius: 1em;
+
+  }
