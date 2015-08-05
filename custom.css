@@ -1,28 +1,36 @@
-body {
-    background-color: lightblue;
-    margin: 0;
-    padding: 90;
-    font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
-
-.h1 {
-background-color: white;
-margin: 10;
-padding: 90;
-
+body{
+	/*background-color:#FBFBFB;*/
 }
 
-
-
-.container {
-  padding-bottom: 0px;
-  padding-top: 0px;
+.wrapper{
+	max-width: 70%;
+	margin:0 auto;
+	padding:20px 50px;
 }
 
-div {
-    width: 900px;
-    margin: 5em auto;
-    padding: 50px;
-    background-color: #fff;
-    border-radius: 1em;
+.top-page-header{
+	border-bottom:1px solid #eee;
+}
 
-  }
+.top-page-header .navigation{
+	float:right;
+	margin-top:42px;
+}
+
+.top-page-header .navigation li{
+	display: inline-block;
+	margin-left: 55px;
+}
+
+.top-page-header .navigation li a{
+	padding:5px;
+	font-size:1.1em;
+}
+
+.top-page-header .navigation li a:hover{
+	text-decoration: none;
+}
+
+.text-muted{
+	color:#aaa;
+}
