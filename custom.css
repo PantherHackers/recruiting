@@ -1,6 +1,6 @@
 body{
 	color: #333;
-	font-size:13px;
+	font-size:14px;
 }
 
 a:hover{
@@ -35,31 +35,91 @@ a:hover{
 .main-content .heading{
 	background-color:#444;
 	color:#fff;
-	padding:6px 10px;
-	font-size:.9em;
+	padding:8px 15px;
+	font-size:1.3em;
 	display:inline-block;
 	margin-bottom:20px;
 }
 
 .event-list{
 	float:left;
-	width:70%;
+	width:65%;
+	margin-right:5%;
 }
 
-.event .event-info .heading{
-	font-size:1.1em;
+.event-list .event{
+	border-top:1px solid #ddd;
+	margin:15px 0;
+	padding:50px 0;
+}
+
+.event-list .event:hover .event-time{
+	background-color:#BFBFBF;
+}
+
+.event-list .event:hover .event-info h2{
+	background-color:#333;
+	color:#fff;
+	padding:10px 15px;
+}
+
+.event-list .event:first-child{
+	padding-top:0;
+	border-top:0;
+	margin-bottom:0;
+}
+
+.event-time{
+	padding:5px 20px 0;
+	background-color:#e8ecec;
+	text-align: center;
+	transition: .4s all ease-in-out;	
+}
+
+.event-time p{
+	margin:2px 0;
+}
+
+.event-time p:last-child{
+	margin-top:10px;	
+}
+
+.event-time hr{
+	width:80%;
+	display:block;
+	height:1px;
+	border:0;
+	margin:5px 0;
+	border-top:1px solid #333;
+}
+
+.event-info{
+	padding-left:20px;	
+}
+
+.event-info .heading{
+	font-size:1.8em;
 	margin-bottom:10px;
+	display:inline-block;
+	color:#333;
+	background-color:transparent;
+	padding:0;
+	transition:.4s all ease-in-out;
+}
+
+.event-info p{
+	max-width:80%;
 }
 
 .event-lookup{
 	float:left;
 	width:30%;
 	padding:40px 0;
-	border-left:1px solid #ddd;
+	/*border-left:1px solid #ddd;*/
 }
 
 .event-lookup .form-control{
-	max-width:150px;
+	max-width:200px;
 	margin-left:15px;
 }
 
@@ -84,4 +144,14 @@ a:hover{
 
 .text-muted{
 	color:#ccc;
+}
+
+.text-small{
+	font-size: .8em;
+}
+.text-emphasized{
+	font-weight: bold;
+}
+.text-bigger{
+	font-size:1.4em;
 }
