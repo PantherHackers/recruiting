@@ -235,6 +235,26 @@ a:hover{
 	color:#fff;
 }
 
+.overlay-group{
+	position: relative;
+}
+
+.overlay-group .overlay-top{
+	position: absolute;
+	z-index: 99;
+	background-color:#000;
+	opacity: .3;
+	top:0;
+	left:0;
+	height:100%;
+	width:100%;
+}
+
+.overlay-group .overlay-bottom{
+	z-index:100;
+	position:relative;
+}
+
 .theme-dark a:hover{
 	color:#ccc;
 }
