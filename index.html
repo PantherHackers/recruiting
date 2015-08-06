@@ -1,35 +1,81 @@
 <!DOCTYPE html>
 <html>
 
-<head>
-  <title>PantherHackers</title>
-
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-  
-  <link rel="stylesheet" href="bootstrap.min.css">
-  <link rel="stylesheet" href="custom.css">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
-</head>
-<body> 
-	<div class="container">
-		<header class="top-page-header">
+	<head>
+		<title>PantherHackers</title>
+		
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		
+		<link rel="stylesheet" href="bootstrap.min.css">
+		<link rel="stylesheet" href="custom.css">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+	</head>
+	<body> 
+		<header class="top-page-header home-page-header clearfix">
 			<div class="wrapper">
-				<img src="http://lorempixel.com/300/300" alt="" class="logo">
-				<ul class="nav">
-					<li class="nav-item"><a href="about.html">About</a></li>
-					<li class="nav-item"><a href="events.html">Events</a></li>
-					<li class="nav-item"><a href="blog.html">Blog</a></li>
-					<li class="nav-item"><a href="projects.html">Projects</a></li>
+				<img src="img/logo.png" class="logo">
+				<ul class="navigation">
+					<li><a href="about.html">About</a></li>
+					<li><a class="active" href="events.html">Events</a></li>
+					<li><a href="blog.html">Blog</a></li>
+					<li><a href="projects.html">Projects</a></li>
 				</ul>
+				
+				<div class="pitch-area">
+					<hgroup class="pitch-group">
+						<h1>Awesome Panther Hackers pitch and whatnot</h1>
+						<h3>Lorem ipsum dolor sit amet, consectetur adipisicing.</h3>
+					</hgroup>
+				</div>
+				
+				<div class="more-area">
+					<p>Learn More</p>
+					<i class="fa fa-angle-down"></i>
+				</div>	
 			</div>
 		</header>
-		<div class="main-content">
-			<div class="wrapper">
-				<h2 class="heading">Events</h2>
+		<div class="main-content wrapper">
+			<h2 class="heading">Welcome to PantherHackers</h2>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat minus eveniet distinctio assumenda itaque consequuntur, minima aspernatur tenetur. Aut tempora porro dignissimos sunt numquam recusandae, sit voluptatibus vitae error suscipit!</p>
+			
+			<div class="recent-posts">
+				<h2>Recent Posts</h2>
+				<div class="post">
+					<h4 class="title">Awesome Title</h4>
+					<p class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque, et!</p>
+					<button class="btn btn-default">Read More</button>
+				</div>
+				<div class="post">
+					<h4 class="title">Awesome Title</h4>
+					<p class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque, et!</p>
+					<button class="btn btn-default">Read More</button>
+				</div>
+				<div class="post">
+					<h4 class="title">Awesome Title</h4>
+					<p class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque, et!</p>
+					<button class="btn btn-default">Read More</button>
+				</div>
 			</div>
 		</div>
-	</div>
-</body>
+		<footer class="top-footer theme-dark">
+			<div class="wrapper">
+			<img src="img/logo.png" alt="" class="logo-small">
+			<p>Designed and developed by Panther Hackers @ GSU</p>
+			<p>
+				<a href="#"><i class="fa fa-facebook"></i></a> &nbsp; 
+				<a href="#" <i class="fa fa-twitter"></i></a> &nbsp; 
+				<a href="#" <i class="fa fa-instagram"></i></a> &nbsp;
+				<a href="#" <i class="fa fa-vine"></i></a> &nbsp;
+				<a href="#" <i class="fa fa-youtube-play"></i></a> &nbsp;
+				<a href="#" <i class="fa fa-envelope-o"></i></a>	
+			</p>
+			<p>Copyright</p>
+		</div>
+		</footer>
+		<script>
+			document.querySelector('header').style.height = window.innerHeight + "px"
+		</script>
+	</body>
 </html>

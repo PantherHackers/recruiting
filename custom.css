@@ -41,6 +41,15 @@ a:hover{
 	max-width: 300px;
 }
 
+.home-page-header{
+	background-image: url("img/header1_img.jpg");
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	 background-position: center;
+}
+
 .top-page-header{
 	border-bottom:1px solid #eee;
 	text-align: center;	
