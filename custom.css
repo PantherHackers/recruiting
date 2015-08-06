@@ -273,3 +273,23 @@ a:hover{
 .text-bigger{
 	font-size:1.4em;
 }
+.pitch-area{
+	height:100%;
+	width:100%;
+	color:#F8F8FA;
+	margin-top:20%;
+	margin-bottom:25%;
+}
+.more-area{
+	height:100%;
+	width:100%;
+	color:#F8F8FA;
+	margin-top:30%;
+	margin-bottom:60%;
+	position:center;
+}
+.logo{
+	height:150%;
+	width:150%;
+	position:center;
+}
