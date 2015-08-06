@@ -144,6 +144,20 @@ a:hover{
 	padding:5px 28px;
 }
 
+.top-footer{
+	background-color:#111;
+	color:#fff;
+	text-align: center;
+}
+
+.top-footer p{
+	margin:8px 0;	
+}
+
+.top-footer .fa{
+	font-size:1.4em;
+}
+
 .text-muted{
 	color:#ccc;
 }
