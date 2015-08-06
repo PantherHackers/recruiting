@@ -53,14 +53,15 @@ a:hover{
 	padding:50px 0;
 }
 
-.event-list .event:hover .event-time{
-	background-color:#BFBFBF;
-}
-
-.event-list .event:hover .event-info h2{
+.event-list .event:hover .event-info{
 	background-color:#333;
 	color:#fff;
-	padding:10px 15px;
+	padding:6px 15px;
+	font-size:1.05em;
+}
+
+.event-list .event:hover h2{
+	color:#fff;
 }
 
 .event-list .event:first-child{
@@ -89,12 +90,13 @@ a:hover{
 	display:block;
 	height:1px;
 	border:0;
-	margin:5px 0;
+	margin:5px auto;
 	border-top:1px solid #333;
 }
 
 .event-info{
-	padding-left:20px;	
+	padding-left:20px;
+	transition: .3s all ease-in-out;	
 }
 
 .event-info .heading{
@@ -151,6 +153,7 @@ a:hover{
 }
 .text-emphasized{
 	font-weight: bold;
+	transition: .4s all ease-in-out;
 }
 .text-bigger{
 	font-size:1.4em;
