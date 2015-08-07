@@ -42,7 +42,7 @@ a:hover{
 }
 
 .home-page-header{
-	background-image: url("img/header1_img.jpg");
+	background-image: url("img/header2_img.jpg");
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
@@ -235,6 +235,26 @@ a:hover{
 	color:#fff;
 }
 
+.overlay-group{
+	position: relative;
+}
+
+.overlay-group .overlay-top{
+	position: absolute;
+	z-index: 99;
+	background-color:#000;
+	opacity: .3;
+	top:0;
+	left:0;
+	height:100%;
+	width:100%;
+}
+
+.overlay-group .overlay-bottom{
+	z-index:100;
+	position:relative;
+}
+
 .theme-dark a:hover{
 	color:#ccc;
 }
@@ -252,4 +272,24 @@ a:hover{
 }
 .text-bigger{
 	font-size:1.4em;
+}
+.pitch-area{
+	height:100%;
+	width:100%;
+	color:#F8F8FA;
+	margin-top:20%;
+	margin-bottom:25%;
+}
+.more-area{
+	height:100%;
+	width:100%;
+	color:#F8F8FA;
+	margin-top:30%;
+	margin-bottom:60%;
+	position:center;
+}
+.logo{
+	height:150%;
+	width:150%;
+	position:center;
 }
