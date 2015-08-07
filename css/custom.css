@@ -9,7 +9,7 @@ background-color:#333;
 
 h1, h2, h3, h4, h5, h6 {
 	
-	font-family: 'Raleway', sans-serif;
+	font-family: 'Raleway', sans-serif !important;
 }
 
 .hidden {
@@ -21,7 +21,7 @@ body{
 	color: #333;
 	font-size:18px;
 	/*font-family: 'Monserrat', sans-serif;*/
-	font-family: 'Gentium Basic', serif;
+	font-family: 'Work Sans', serif;
 }
 
 a{
