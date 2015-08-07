@@ -7,6 +7,11 @@ border-radius:3px;
 background-color:#333;
 */
 
+.hidden {
+	
+	display: none;
+}
+
 body{
 	color: #333;
 	font-size:14px;
