@@ -47,7 +47,7 @@ a:hover{
 }
 
 .home-page-header{
-	background-image: url("img/header2_img.jpg");
+	background-image: url("../img/header2_img.jpg");
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;

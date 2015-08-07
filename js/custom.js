@@ -3,13 +3,13 @@ var myApp = angular.module('myApp', ['ngRoute']);
 myApp.config(['$routeProvider', function ($routeProvider) {
 	
 	$routeProvider
-		.when('/events', {
-			templateUrl: './events.html',
-			controller: 'EventsController'
-		})
 		.when('/', {
-			templateUrl: './home.html',
+			templateUrl: 'pages/home.html',
 			controller: 'HomeController'
+		})
+		.when('/events', {
+			templateUrl: 'pages/events.html',
+			controller: 'EventsController'
 		})
 		.otherwise({
 			redirectTo: '/'
