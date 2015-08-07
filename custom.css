@@ -274,6 +274,10 @@ a:hover{
 	font-weight: bolder;
 }
 
+.recent-posts{
+	margin-top:10px;
+}
+
 .recent-posts .heading{
 	margin-top:0;
 }
@@ -289,13 +293,31 @@ a:hover{
 	margin-right: 0;
 }
 
+.post-excerpt .side:nth-child(1){
+	text-align: right;
+	padding-right:10px;
+	width:45%;
+}
+
+
+.post-excerpt .side:nth-child(2){
+	text-align: left;
+	padding-left:10px;
+	border-left:1px solid #aaa;
+	width:55%;
+}
+
 .post-excerpt .image{
 	margin:15px 0;
+	margin-bottom:0;
 }
 
 .post-excerpt .title{
 	margin-bottom:0;
+	font-size:1.3em;
+	margin-top:0;
 }
+
 
 .post-excerpt .btn{
 	margin-top:5px;	
@@ -330,7 +352,6 @@ a:hover{
 	position:relative;
 }
 
-
 .theme-dark{
 	background-color:#222;
 	color:#fff;
@@ -346,6 +367,11 @@ a:hover{
 
 .theme-dark a:hover{
 	color:#ccc;
+}
+
+.side{
+	float:left;
+	width:50%;
 }
 
 .section-padding{
