@@ -4,7 +4,7 @@ myApp.config(['$routeProvider', function ($routeProvider) {
 	
 	$routeProvider
 		.when('/events', {
-			templateUrl: './events.html',
+			templateUrl: 'https://raw.githubusercontent.com/PantherHackers/recruiting/gh-pages/events.html',
 			controller: 'EventsController'
 		})
 		// .when('/', {
