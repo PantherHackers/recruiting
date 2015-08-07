@@ -32,34 +32,39 @@
 					
 					
 					<div class="more-area">
-						<p>Learn More</p>
-						<i class="fa fa-angle-down"></i>
+						<a href="#main-content">
+							<p>Learn More</p>
+							<i class="fa fa-angle-down"></i>
+						</a>
 					</div>	
 				</div>
 			</header>	
 		</div>
-		<div class="main-content">
+		<div class="main-content" id="main-content">
 			<div class="wrapper">
 				<h2 class="heading">Welcome to PantherHackers</h2>
 				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat minus eveniet distinctio assumenda itaque consequuntur, minima aspernatur tenetur. Aut tempora porro dignissimos sunt numquam recusandae, sit voluptatibus vitae error suscipit!</p>
 			</div>
 			
-			<div class="recent-posts theme-secondary">
+			<div class="recent-posts section-padding theme-secondary">
 				<div class="wrapper">
-					<h2>Recent Activity</h2>
-					<div class="posts-excerpt-container">
-						<div class="posts-excerpt">
-							<h4 class="title">Awesome Title</h4>
+					<h2 class="heading">Recent Activity</h2>
+					<div class="posts-excerpt-container clearfix">
+						<div class="post-excerpt box">
+							<h2 class="title">Awesome Title</h2>
+							<img class="image" src="http://lorempixel.com/180/100"/>	
 							<p class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque, et!</p>
 							<button class="btn btn-default">Read More</button>
 						</div>
-						<div class="posts-excerpt">
-							<h4 class="title">Awesome Title</h4>
+						<div class="post-excerpt box">
+							<h2 class="title">Awesome Title</h2>
+							<img class="image" src="http://lorempixel.com/180/100"/>	
 							<p class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque, et!</p>
 							<button class="btn btn-default">Read More</button>
 						</div>
-						<div class="posts-excerpt">
-							<h4 class="title">Awesome Title</h4>
+						<div class="post-excerpt box">
+							<h2 class="title">Awesome Title</h2>
+							<img class="image" src="http://lorempixel.com/180/100"/>	
 							<p class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque, et!</p>
 							<button class="btn btn-default">Read More</button>
 						</div>
@@ -82,8 +87,26 @@
 			<p>Copyright</p>
 		</div>
 		</footer>
+		
+		<script src="https://code.jquery.com/jquery-1.11.3.js"></script>
 		<script>
-			document.querySelector('header').style.height = window.innerHeight + "px"
+			document.querySelector('header').style.height = window.innerHeight + "px";
+			
+			$(function() {
+				$('a[href*=#]:not([href=#])').click(function() {
+					if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+						var target = $(this.hash);
+						target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+						if (target.length) {
+							$('html,body').animate({
+								scrollTop: target.offset().top
+							}, 1000);
+							
+							return false;
+						}
+					}
+				});
+			});
 		</script>
 	</body>
 </html>
