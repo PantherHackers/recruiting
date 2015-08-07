@@ -2,13 +2,14 @@
 STYLE GUIDE:
 
 transition: .3s all ease-in-out;
-border-radius:3px;
 
-background-color:#333;
+border:2px solid #999;border-radius:3px;
+
+background-color:#444;
 */
 
 body{
-	color: #333;
+	color: #444;
 	font-size:18px;
 	/*font-family: 'Monserrat', sans-serif;*/
 	font-family: 'Gentium Basic', serif;
@@ -90,11 +91,12 @@ a:hover{
 
 .top-page-header .navigation li a:hover{
 	color:#fff;
-	background-color:#333;
+	background-color:#444;
 	font-size:1.11em;
 }
+
 .main-content .heading{
-	background-color:#333;
+	background-color:#444;
 	color:#fff;
 	padding:8px 15px;
 	font-size:1.3em;
@@ -115,7 +117,7 @@ a:hover{
 }
 
 .event-list .event:hover .event-info{
-	background-color:#333;
+	background-color:#444;
 	color:#fff;
 	padding:6px 15px;
 	font-size:1.05em;
@@ -152,8 +154,9 @@ a:hover{
 	display:block;
 	height:1px;
 	border:0;
+	border:2px solid #999;
 	margin:5px auto;
-	border-top:1px solid #333;
+	border-top:1px solid #444;
 }
 
 .event-info{
@@ -164,8 +167,9 @@ a:hover{
 .event-info .heading{
 	font-size:1.8em;
 	margin-bottom:10px;
+	border:2px solid #999;
 	display:inline-block;
-	color:#333;
+	color:#444;
 	background-color:transparent;
 	padding:0;
 	transition:.3s all ease-in-out;
@@ -203,7 +207,7 @@ a:hover{
 }
 
 .event-lookup-items li a:hover{
-	background-color:#333;
+	background-color:#444;
 	color:#fff;
 	font-size:1.11em;
 	padding:8px 28px;
@@ -350,6 +354,17 @@ a:hover{
 .overlay-group .overlay-bottom{
 	z-index:100;
 	position:relative;
+}
+
+.btn{
+	background-color: transparent;
+	border:1px solid #666;
+	transition: .3s all ease-in-out;
+}
+
+.btn:hover{
+	color:#fff;
+	background-color:#666;
 }
 
 .theme-dark{
