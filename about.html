@@ -14,11 +14,11 @@
 	</head>
 	<body ng-app="myApp"> 
 		<div ng-controller="MainController">
-			<header class="top-page-header clearfix">
+			<header class="top-page-header clearfix theme-dark">
 				<div class="wrapper">
 					<a href="index.html"> <img src="img/logo.png" class="logo"></a>
 					<ul class="navigation">
-						<li><a href="about.html">About</a></li>
+						<li><a class="active" href="about.html">About</a></li>
 						<li><a href="events.html">Events</a></li>
 						<li><a href="blog.html">Blog</a></li>
 						<li><a href="projects.html">Projects</a></li>
@@ -31,56 +31,92 @@
 				Inspiration:
 				http://www.thedolectures.com/about/
 			--> 
-		<div class="main-content wrapper">
-			<div class="section-padding about-section">
-				<div class="side">
-					<h2 class="heading">About</h2>	
+		<div class="main-content">
+			<div class="wrapper">
+				<div class="clearfix about-section">
+					<div class="side">
+						<h2 class="heading top-heading">About</h2>	
+					</div>
+					<div class="side">
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit tempora perspiciatis, quis pariatur obcaecati nesciunt amet laborum, iure placeat deleniti assumenda iusto officiis, aliquid expedita. In quidem iusto vitae temporibus est modi ducimus, aperiam quos consequuntur nihil deserunt reiciendis. Non sed voluptatibus saepe nisi, fugit. Doloremque voluptas, laboriosam quae! Possimus ad fugiat distinctio omnis assumenda tempora sequi optio dicta, at!</p>
+					</div>
 				</div>
-				<div class="side">
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit tempora perspiciatis, quis pariatur obcaecati nesciunt amet laborum, iure placeat deleniti assumenda iusto officiis, aliquid expedita. In quidem iusto vitae temporibus est modi ducimus, aperiam quos consequuntur nihil deserunt reiciendis. Non sed voluptatibus saepe nisi, fugit. Doloremque voluptas, laboriosam quae! Possimus ad fugiat distinctio omnis assumenda tempora sequi optio dicta, at!</p>
-				</div>
+				<div class="clearfix">
+					<div class="side">
+						<ul>
+							<li class="p-group">
+								<p>Email us</p>
+								<p><a href="mailto:hello@pantherhackers.com">hello@pantherhackers.com</a></p>
+							</li>
+							<li class="p-group">
+								<p>Other Info</p>
+								<p><a href="#">Some other info</a></p>
+							</li>
+							<li class="p-group">
+								<p>Other Info</p>
+								<p><a href="#">Some other info</a></p>
+							</li>
+							<li class="p-group">
+								<p>Other Info</p>
+								<p><a href="#">Some other info</a></p>
+							</li>
+						</ul>
+					</div>
+					<div class="side">
+						<img src="http://lorempixel.com/550/350" alt="">
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus eum voluptatum esse quos doloribus sequi necessitatibus placeat mollitia architecto porro. Nobis cupiditate error ut eos dolorum veniam, dolore suscipit officia ratione distinctio impedit earum omnis repellat ab natus deleniti explicabo.</p>
+					</div>
+				</div>	
 			</div>
-			<div class="section-padding">
-				<div class="side">
-					<ul>
-						<li><a href="mailto:hello@pantherhackers.com">Email us</a></li>
-						<li><a href="#">Some other info</a></li>
-						<li><a href="#">Some other info</a></li>
-						<li><a href="#">Some other info</a></li>
-					</ul>
-				</div>
-				<div class="side">
-					<img src="http://lorempixel.com/400/400" alt="">
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus eum voluptatum esse quos doloribus sequi necessitatibus placeat mollitia architecto porro. Nobis cupiditate error ut eos dolorum veniam, dolore suscipit officia ratione distinctio impedit earum omnis repellat ab natus deleniti explicabo.</p>
-				</div>
-			</div>
+			
 			<div class="section-padding theme-light">
-				<h2 class="heading">Club Leaders</h2>
-				<div class="team-images">
-					<figure class="team-image">
-						<img src="http://lorempixel.com/200/200" alt="">
-						<div class="figcaption">
-							Lorem ipsum dolor sit.
-						</div>
-					</figure>
-					<figure class="team-image">
-						<img src="http://lorempixel.com/200/200" alt="">
-						<div class="figcaption">
-							Lorem ipsum dolor sit.
-						</div>
-					</figure>
-					<figure class="team-image">
-						<img src="http://lorempixel.com/200/200" alt="">
-						<div class="figcaption">
-							Lorem ipsum dolor sit.
-						</div>
-					</figure>
-					<figure class="team-image">
-						<img src="http://lorempixel.com/200/200" alt="">
-						<div class="figcaption">
-							Lorem ipsum dolor sit.
-						</div>
-					</figure>
+				<div class="wrapper">
+					<h2 class="heading">Club Leaders</h2>
+					<div class="team-images clearfix">
+						<figure class="team-image">
+							<div class="overlay-group">
+								<div class="overlay-top rounded"></div>
+								<img class="rounded" src="http://lorempixel.com/200/200" alt="">
+								<figcaption class="overlay-bottom p-group">
+									<p>Cool name:</p> 
+									<p>Awesome title</p>
+								</figcaption>
+							</div>
+						</figure>
+						
+						<figure class="team-image">
+							<div class="overlay-group">
+								<div class="overlay-top rounded"></div>
+								<img class="rounded" src="http://lorempixel.com/200/200" alt="">
+								<figcaption class="overlay-bottom p-group">
+									<p>Cool name:</p> 
+									<p>Awesome title</p>
+								</figcaption>
+							</div>
+						</figure>
+						
+						<figure class="team-image">
+							<div class="overlay-group">
+								<div class="overlay-top rounded"></div>
+								<img class="rounded" src="http://lorempixel.com/200/200" alt="">
+								<figcaption class="overlay-bottom p-group">
+									<p>Cool name:</p> 
+									<p>Awesome title</p>
+								</figcaption>
+							</div>
+						</figure>
+						
+						<figure class="team-image">
+							<div class="overlay-group">
+								<div class="overlay-top rounded"></div>
+								<img class="rounded" src="http://lorempixel.com/200/200" alt="">
+								<figcaption class="overlay-bottom p-group">
+									<p>Cool name:</p> 
+									<p>Awesome title</p>
+								</figcaption>
+							</div>
+						</figure>
+					</div>
 				</div>
 			</div>
 		</div>
@@ -101,8 +137,6 @@
 		</footer>
 		
 		<script type="text/javascript" src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
-		<script type="text/javascript" src="https://code.angularjs.org/1.4.3/angular.min.js"></script>
-		<script type="text/javascript" src="https://code.angularjs.org/1.4.3/angular-route.min.js"></script>
 		<script type="text/javascript" src="js/app.js"></script>
 	</body>
 </html>
