@@ -147,7 +147,7 @@ a:hover{
 	margin-bottom:0;
 }
 
-.event-time{
+.event-time.box{
 	padding:5px 20px 0; 
 }
 
@@ -163,7 +163,6 @@ a:hover{
 	width:80%;
 	display:block;
 	height:1px;
-	border:0;
 	border:2px solid #999;
 	margin:5px auto;
 	border-top:1px solid #444;
@@ -177,10 +176,9 @@ a:hover{
 .event-info .heading{
 	font-size:1.8em;
 	margin-bottom:10px;
-	border:2px solid #999;
 	display:inline-block;
 	color:#444;
-	background-color:transparent;
+	background-color: transparent;
 	padding:0;
 	transition:.3s all ease-in-out;
 }
@@ -292,8 +290,17 @@ a:hover{
 	margin-top:10px;
 }
 
+.recent-posts .wrapper{
+	padding-top:0;
+}
+
+.recent-posts.section-padding{
+	padding-top:50px;	
+}
+
 .recent-posts .heading{
 	margin-top:0;
+	margin-bottom:50px;
 }
 
 .post-excerpt{
@@ -400,7 +407,7 @@ a:hover{
 }
 
 .section-padding{
-	padding:20px;
+	padding:65px 0;
 }
 
 .text-muted{
