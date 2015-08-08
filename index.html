@@ -8,23 +8,28 @@
 		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 		<script type="text/javascript" src="https://code.angularjs.org/1.4.3/angular.min.js"></script>
 		<script type="text/javascript" src="https://code.angularjs.org/1.4.3/angular-route.min.js"></script>
-		<script type="text/javascript" src="custom.js"></script>
-		<link rel="stylesheet" href="bootstrap.min.css">
-		<link rel="stylesheet" href="custom.css">
+		<script type="text/javascript" src="js/custom.js"></script>
+		<link rel="stylesheet" href="css/bootstrap.min.css">
+		<link rel="stylesheet" href="css/custom.css">
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+		<link href='https://fonts.googleapis.com/css?family=Work+Sans' rel='stylesheet' type='text/css'>
+		<link href='https://fonts.googleapis.com/css?family=Raleway:600' rel='stylesheet' type='text/css'>
 	</head>
 	<body ng-app="myApp"> 
-		<header class="top-page-header clearfix">
-			<div class="wrapper">
-				<img src="img/logo.png" class="logo">
-				<ul class="navigation">
-					<li><a href="about.html">About</a></li>
-					<li><a class="active" href="#/events">Events</a></li>
-					<li><a href="blog.html">Blog</a></li>
-					<li><a href="projects.html">Projects</a></li>
-				</ul>	
-			</div>
-		</header>
+		<div ng-controller="MainController">
+			<header ng-if="!isHome()" class="top-page-header clearfix">
+				<div class="wrapper">
+					<img src="img/logo.png" class="logo">
+					<ul class="navigation">
+						<li><a class="active" href="#/">Home</a></li>
+						<li><a href="#/about">About</a></li>
+						<li><a href="#/events">Events</a></li>
+						<li><a href="#/blog">Blog</a></li>
+						<li><a href="#/projects">Projects</a></li>
+					</ul>	
+				</div>
+			</header>
+		</div>
 		<div ng-view>
 		
 		</div>
