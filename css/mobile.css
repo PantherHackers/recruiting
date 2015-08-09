@@ -1,3 +1,9 @@
+.mobile-stack{
+	float:none;
+	width:100%;
+	margin-right:0;
+}
+
 .top-page-header .mobile-hamburger-area{
 	float: right;
 	display:none;
@@ -7,6 +13,22 @@
 	border:0;
 	font-size:1.2em;
 }
+
+
+/*******
+*** TOP NAVIGATION
+*******/
+
+@media(max-width: 502px){
+	.top-page-header .logo-area{
+		padding:5px 0;
+	}
+	
+	.top-page-header .logo-area .logo{
+		max-width: 225px;
+	}
+}
+
 
 @media(max-width:1022px){
 	.top-page-header .navigation-area,
@@ -23,12 +45,42 @@
 	}		
 }
 
-@media(max-width: 502px){
-	.top-page-header .logo-area{
-		padding:5px 0;
+
+/*******
+*** ABOUT PAGE
+*******/
+
+@media(max-width:840px){
+	.team-image{
+		max-width:40%;
+		margin:50px auto;
 	}
 	
-	.top-page-header .logo-area .logo{
-		max-width: 225px;
+	.team-image:last-child{
+		margin-right:auto;
+	}
+	
+	.team-image figcaption{
+		font-size:1.8em;
+		top:35%;
+		left:22%;
+	}
+}
+
+@media(max-width:679px){
+	.about-section .about-contact-info{
+		display:none;
+	}
+}
+
+@media(max-width:520px){
+	.team-image{
+		max-width: 60%;
+	}
+	
+	.team-image figcaption{
+		font-size:1.4em;
+		top: 33%;
+	    left: 19%;
 	}
 }

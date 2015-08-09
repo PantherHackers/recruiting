@@ -387,26 +387,26 @@ img{
 	margin-top:0;
 }
 
-.about-section + div img{
-	margin:25px 0;
+.about-section img{
+	margin:35px 0;
 }
 
-.team-images .team-image{
+.team-image{
 	float: left;
 	width:23.25%;
 	margin-right:2%;
 	position:relative;
 }
 
-.team-images .team-image:last-child{
+.team-image:last-child{
 	margin-right:0;
 }
 
-.team-images .team-image img{
+.team-image img{
 	width:100%;
 }
 
-.team-images .team-image figcaption{
+.team-image figcaption{
 	position:absolute;
 	top:34%;
 	left:24%;
@@ -558,8 +558,8 @@ img{
 	margin-bottom:20px;
 }
 
-.heading.top-heading{
-	padding-right:200px;
+.heading.top-heading, .heading.long-heading{
+	width:200px;
 }
 
 .box{
@@ -584,7 +584,7 @@ img{
 	position: relative;
 }
 
-.overlay-group .overlay-top{
+.overlay-top{
 	position: absolute;
 	z-index: 99;
 	background-color:#000;
@@ -595,7 +595,7 @@ img{
 	width:100%;
 }
 
-.overlay-group .overlay-bottom{
+.overlay-bottom{
 	z-index:100;
 	position:relative;
 }
