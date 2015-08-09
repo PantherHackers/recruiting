@@ -383,10 +383,28 @@ p{
 	color:#999;
 	margin-bottom:20px;
 }
+.category-list .active a{
+	color:#4C94DC;
+}
 
 .category-list li{
 	display: inline-block;
 	text-transform: uppercase;
+}
+
+
+.category-list li .form-control{
+	height:25px;
+	padding:4px 5px;
+	display:inline-block;
+	width: 150px;
+}
+
+.category-list li .btn{
+	display:inline-block;
+	padding-top:1px;
+	padding-bottom:1px;
+	margin-left: 10px;
 }
 
 .category-list .separator{
@@ -436,7 +454,7 @@ p{
 }
 
 .blog-post figcaption .category{
-	background-color:lightgreen;
+	background-color:#4C94DC;
 	display:inline-block;
 	position: relative;
 	top:-22px;
