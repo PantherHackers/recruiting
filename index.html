@@ -12,18 +12,26 @@
 		<link href='http://fonts.googleapis.com/css?family=Alice|Montserrat|Gentium+Basic|Raleway:600|Work+Sans' rel='stylesheet' type='text/css'>
 		<link rel="stylesheet" href="css/custom.css">
 	</head>
-	<body ng-app="myApp"> 
+	<body>
 		<div class="overlay-group">
 			<div class="overlay-top"></div>
-			<header class="top-page-header home-page-header clearfix">
-				<div class="overlay-bottom wrapper">
-					<img src="img/logo.png" class="logo">
+			<header class="top-page-header home-page-header">
+				<div class="overlay-bottom wrapper clearfix">
 					<ul class="navigation">
 						<li><a href="about.html">About</a></li>
 						<li><a href="events.html">Events</a></li>
-						<li><a href="blog.html">Blog</a></li>
+						<li><a class="active" href="blog.html">Blog</a></li>
 						<li><a href="projects.html">Projects</a></li>
-						<li><a href="member.html">Become a Member</a></li>
+					</ul>
+					<a class="logo-area" href="index.html"> <img src="img/logo.png" class="logo"></a>
+					
+					<ul class="social-media-area">
+						<li> <a href="#"><i class="fa fa-facebook"></i></a></li> 
+						<li> <a href="#" <i class="fa fa-twitter"></i></a></li> 
+						<li> <a href="#" <i class="fa fa-instagram"></i></a></li>
+						<li> <a href="#" <i class="fa fa-vine"></i></a></li>
+						<li> <a href="#" <i class="fa fa-youtube-play"></i></a></li>
+						<li> <a href="#" <i class="fa fa-envelope-o"></i></a></li>
 					</ul>
 					
 					<hgroup class="pitch-group">
@@ -101,10 +109,7 @@
 		</footer>
 		
 		<script type="text/javascript" src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
-		<script type="text/javascript" src="https://code.angularjs.org/1.4.3/angular.min.js"></script>
-		<script type="text/javascript" src="https://code.angularjs.org/1.4.3/angular-route.min.js"></script>
 		<script type="text/javascript" src="js/app.js"></script>
-	
 		<script>
 			document.querySelector('header').style.height = window.innerHeight + "px";
 			
