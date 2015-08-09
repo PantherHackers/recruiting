@@ -81,17 +81,17 @@ p{
 	border-bottom:1px solid #eee;
 }
 
-.theme-dark.top-page-header{
+.theme-dark.top-page-header, .home-page-header.top-page-header{
 	border:0;
 }
 
-.top-page-header .wrapper > *{
+.top-page-header .wrapper > *:nth-child(-n+3){
 	float:left;
 }
 
 .top-page-header .navigation{
 	text-align: left;
-	margin:35px 0;
+	margin:18px 0;
 }
 
 .top-page-header .navigation li{
@@ -114,22 +114,22 @@ p{
 }
 
 .top-page-header .logo-area{
-	margin:0 11%;
+	margin:0 10%;
 	display: inline-block;
-	padding:18px 0;
+	padding:8px 0;
 }
 
 .top-page-header .logo{
-	max-width:550px;
+	max-width:450px;
 }
 
 .top-page-header .social-media-area{
-	margin:35px 0;
+	margin:18px 0;
 }
 
 .top-page-header .social-media-area li{
 	display: inline-block;
-	padding:0 7px;
+	padding:0 9px;
 	font-size:1.2em;
 }
 
