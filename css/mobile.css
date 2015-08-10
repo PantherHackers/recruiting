@@ -187,6 +187,59 @@
 	}
 }
 
+/*******
+*** INDIVIDUAL BLOG POST PAGE
+*******/
+
+@media(max-width:1357px){
+	.post-image-area .post-info.overlay-bottom{
+		top:16%;	
+	}
+}
+
+@media(max-width:1035px){
+	.post-image-area .post-info.overlay-bottom{
+		top:10%;	
+	}
+	
+	.post-image-area .post-info .title{
+		font-size:3em;
+	}
+}
+
+
+@media(max-width:822px){
+	.single-blog-post .post-content{
+		top:-30px;	
+		padding-left:35px;
+		padding-right:35px;
+	}
+	
+	.post-image-area .post-info.overlay-bottom{
+		top:7%;	
+	}
+	
+	.post-image-area .post-info .title{
+		font-size:2em;
+	}
+}
+
+@media(max-width:400px){
+	.single-blog-post .post-content{
+		top:-15px;
+	}
+	
+	.post-image-area .post-info.overlay-bottom{
+		top:2%;	
+	}
+	
+	.post-image-area .post-info .title{
+		font-size:2em;
+	}
+}
+/*******
+*** COMPONENTS
+*******/
 @media(max-width:645px){
 	.category-list .category-item,
 	.category-list .separator{

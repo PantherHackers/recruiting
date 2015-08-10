@@ -11,9 +11,11 @@
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
 		<link href='http://fonts.googleapis.com/css?family=Alice|Montserrat|Gentium+Basic|Raleway:600|Work+Sans' rel='stylesheet' type='text/css'>
 		<link rel="stylesheet" href="css/custom.css">
+		<link rel="stylesheet" href="css/mobile.css">
 	</head>
-	<body> 
-		<div class="overlay-group mobile-top-nav-area">
+	<body>
+			<header class="top-page-header">
+			<div class="overlay-group mobile-top-nav-area">
 			<div class="overlay-top"></div>
 			<div class="overlay-bottom mobile-top-nav">
 				<p class="close-button"><i class="fa fa-times"></i></p>
@@ -57,17 +59,20 @@
 				</p>
 			</div>
 		</div>
-			<header class="top-page-header">
-				<div class="wrapper clearfix">
+			<div class="wrapper clearfix">
+				<div class="navigation-area">
 					<ul class="navigation">
 						<li><a href="about.html">About</a></li>
 						<li><a href="events.html">Events</a></li>
 						<li><a class="active" href="blog.html">Blog</a></li>
 						<li><a href="projects.html">Projects</a></li>
 					</ul>
-					<a class="logo-area" href="index.html"> <img src="img/logo.png" class="logo"></a>
-					
-					<ul class="social-media-area">
+				</div>
+				
+				<a class="logo-area" href="index.html"> <img src="img/logo.png" class="logo"></a>
+				
+				<div class="social-media-area">
+					<ul>
 						<li> <a href="#"><i class="fa fa-facebook"></i></a></li> 
 						<li> <a href="#" <i class="fa fa-twitter"></i></a></li> 
 						<li> <a href="#" <i class="fa fa-instagram"></i></a></li>
@@ -76,7 +81,11 @@
 						<li> <a href="#" <i class="fa fa-envelope-o"></i></a></li>
 					</ul>
 				</div>
-			</header>
+				<div class="mobile-hamburger-area">
+					<button class="btn"><i class="fa fa-bars"></i></button>
+				</div>
+			</div>
+		</header>
 			<!--
 				Inspiration:
 				https://scholarblogs.emory.edu/atlantastudies/articles/

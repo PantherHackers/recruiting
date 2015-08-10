@@ -525,7 +525,8 @@ img{
 
 .post-image-area .post-info.overlay-bottom{
 	position:absolute;
-    left: 33%;
+    left: 0;
+	right: 0;
     top: 34%;
 	margin:0;
 	color:#fff;
@@ -541,6 +542,7 @@ img{
 	position: relative;
 	top:-90px;
 	z-index: 100;
+	max-width: 70%;
 }
 
 .single-blog-post .post-content img{
