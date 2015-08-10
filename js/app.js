@@ -14,3 +14,10 @@ if (window.innerWidth <= 700){
 	$('.blog-post').addClass("mobile-stack");
 }
 
+$('.mobile-hamburger-area').click(function () {
+	$('.mobile-top-nav-area').css('display', 'block');
+});
+
+$('.mobile-top-nav-area .close-button').click(function () {
+	$('.mobile-top-nav-area').css('display', 'none');
+});
