@@ -14,6 +14,10 @@ if (window.innerWidth <= 700){
 	$('.blog-post').addClass("mobile-stack");
 }
 
+if (window.innerWidth <= 870) {
+	$('.post-excerpt').addClass("mobile-stack");
+}
+
 $('.mobile-hamburger-area').click(function () {
 	$('.mobile-top-nav-area').css('display', 'block');
 });

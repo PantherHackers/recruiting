@@ -11,6 +11,7 @@
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
 		<link href='http://fonts.googleapis.com/css?family=Alice|Montserrat|Gentium+Basic|Raleway:600|Work+Sans' rel='stylesheet' type='text/css'>
 		<link rel="stylesheet" href="css/custom.css">
+		<link rel="stylesheet" href="css/mobile.css">
 	</head>
 	<body>
 		<div class="overlay-group mobile-top-nav-area">
@@ -18,8 +19,8 @@
 			<div class="overlay-bottom mobile-top-nav">
 				<p class="close-button"><i class="fa fa-times"></i></p>
 				
-				<a href="index.html">Home</a>
-				<a href="about.html">About</a>
+				<p><a href="index.html">Home</a></p>
+				<p><a href="about.html">About</a></p>
 				<hr class="separator"/>
 				
 				<div data-collapse="accordion">	
@@ -61,12 +62,15 @@
 			<div class="overlay-top"></div>
 			<header class="top-page-header home-page-header">
 				<div class="overlay-bottom wrapper clearfix">
-					<ul class="navigation">
-						<li><a href="about.html">About</a></li>
-						<li><a href="events.html">Events</a></li>
-						<li><a href="blog.html">Blog</a></li>
-						<li><a href="projects.html">Projects</a></li>
-					</ul>
+					<div class="navigation-area">
+						<ul class="navigation">
+							<li><a href="about.html">About</a></li>
+							<li><a class="active" href="events.html">Events</a></li>
+							<li><a href="blog.html">Blog</a></li>
+							<li><a href="projects.html">Projects</a></li>
+						</ul>
+					</div>
+					
 					<a class="logo-area" href="index.html"> <img src="img/logo.png" class="logo"></a>
 					
 					<ul class="social-media-area">
@@ -77,6 +81,10 @@
 						<li> <a href="#" <i class="fa fa-youtube-play"></i></a></li>
 						<li> <a href="#" <i class="fa fa-envelope-o"></i></a></li>
 					</ul>
+					
+					<div class="mobile-hamburger-area">
+						<button class="btn"><i class="fa fa-bars"></i></button>
+					</div>
 					
 					<hgroup class="pitch-group">
 						<h1>Awesome Panther Hackers pitch. Much inspiration.</h1>
@@ -98,43 +106,43 @@
 				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat minus eveniet distinctio assumenda itaque consequuntur, minima aspernatur tenetur. Aut tempora porro dignissimos sunt numquam recusandae, sit voluptatibus vitae error suscipit!</p>
 			</div>
 			
-			<div class="recent-posts section-padding theme-light">
-				<div class="wrapper">
-					<h2 class="heading">Recent Activity</h2>
-					<div class="posts-excerpt-container clearfix">
-						<div class="post-excerpt clearfix">
-							<div class="side">
-								<h2 class="title">Awesome Title</h2>
-								<img class="image" src="http://lorempixel.com/100/100"/>	
-							</div>
-							<div class="side">
-								<p class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque, et!</p>
-								<button class="btn">Read More</button>
-							</div>
-						</div>
-						<div class="post-excerpt clearfix">
-							<div class="side">
-								<h2 class="title">Awesome Title</h2>
-								<img class="image" src="http://lorempixel.com/100/100"/>	
-							</div>
-							<div class="side">
-								<p class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque, et!</p>
-								<button class="btn">Read More</button>
-							</div>
-						</div>
-						<div class="post-excerpt clearfix">
-							<div class="side">
-								<h2 class="title">Awesome Title</h2>
-								<img class="image" src="http://lorempixel.com/100/100"/>	
-							</div>
-							<div class="side">
-								<p class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque, et!</p>
-								<button class="btn">Read More</button>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
+			<div class="blog-posts wrapper clearfix">
+				<figure class="blog-post">
+					<img src="http://lorempixel.com/350/200" alt="">
+					<a href="individual.html">
+						<figcaption>
+							<p class="category">Category</p>
+							<p class="title">Awesome Blog Post</p>
+							<p class="excerpt">Lorem ipsum dolor sit amet, consectetur adipisicing elit. In, error....</p>
+							<p class="text-muted text-small">10 posted hours ago</p>
+							<p><button class="btn"> Read More </button></p>
+						</figcaption>
+					</a>
+				</figure>
+				<figure class="blog-post">
+					<img src="http://lorempixel.com/350/200" alt="">
+					<a href="individual.html">
+						<figcaption>
+							<p class="category">Category</p>
+							<p class="title">Awesome Blog Post</p>
+							<p class="excerpt">Lorem ipsum dolor sit amet, consectetur adipisicing elit. In, error....</p>
+							<p class="text-muted text-small">10 posted hours ago</p>
+							<p><button class="btn"> Read More </button></p>
+						</figcaption>
+					</a>
+				</figure>
+				<figure class="blog-post">
+					<img src="http://lorempixel.com/350/200" alt="">
+					<a href="individual.html">
+						<figcaption>
+							<p class="category">Category</p>
+							<p class="title">Awesome Blog Post</p>
+							<p class="excerpt">Lorem ipsum dolor sit amet, consectetur adipisicing elit. In, error....</p>
+							<p class="text-muted text-small">10 posted hours ago</p>
+							<p><button class="btn"> Read More </button></p>
+						</figcaption>
+					</a>
+				</figure>
 		</div>
 		<footer class="top-footer theme-dark">
 			<div class="wrapper">
