@@ -445,7 +445,7 @@ img{
 
 .blog-post{
 	float:left;
-	max-width: 29%;
+	width: 29%;
 	margin-right:4.3333%;
 	margin-bottom:40px;
 	position: relative;

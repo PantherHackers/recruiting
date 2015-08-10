@@ -6,8 +6,11 @@ if (window.innerWidth <= 679){
 	$('.about-section .side').addClass("mobile-stack");
 }
 
-if (window.innerWidth <= 645){
+if (window.innerWidth <= 700){
 	$('.event div').addClass("mobile-stack");
 	$('.event').addClass("box");
 	$('.event .event-time').removeClass("box");
+	
+	$('.blog-post').addClass("mobile-stack");
 }
+
