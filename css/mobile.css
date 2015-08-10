@@ -2,6 +2,7 @@
 	float:none;
 	width:100%;
 	margin-right:0;
+	display: block;
 }
 
 .top-page-header .mobile-hamburger-area{
@@ -82,5 +83,42 @@
 		font-size:1.4em;
 		top: 33%;
 	    left: 19%;
+	}
+}
+
+@media(max-width:645px){
+	.event-list .event{
+		text-align: center;
+		margin-bottom:65px;
+		padding-left:30px;
+		padding-right:30px;
+	}
+	
+	.event-list .event:first-child{
+		margin-bottom: 65px;	
+		padding-top:50px;
+	}
+	
+	.event-list .event-time{
+		width:60%;
+		margin:0 auto;
+	}
+	
+	.event-list .event-time hr{
+		width:30%;
+	}
+}
+
+@media(max-width:420px){
+	.event-list .event{
+		padding-left:10px;
+		padding-right:10px;
+	}
+}
+
+@media(max-width:645px){
+	.category-list .category-item,
+	.category-list .separator{
+		display:none;
 	}
 }
