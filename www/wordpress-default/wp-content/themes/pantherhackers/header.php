@@ -22,13 +22,19 @@
 		<header class="top-page-header <?php if (is_home()){ echo "home-page-header"; }?>">
 			<div class="<?php if (is_home()){ echo "overlay-bottom"; }?> wrapper clearfix">
 				<div class="navigation-area">
-					<ul class="navigation">
-						<li><a href="about.html">About</a></li>
-						<li><a class="active" href="events.html">Events</a></li>
-						<li><a href="blog.html">Blog</a></li>
-						<li><a href="projects.html">Projects</a></li>
-					</ul>
+					<?php 
+					 wp_nav_menu(
+						 array( 
+							  'menu' => 'mainnav', 'menu_class' => 'navigation',
+							  'menu_id' => 'navigation', 'container' => false,
+							  'theme_location' => 'primary', 'show_home' => ''
+							  )
+					); 
+					 ?>
 				</div>
+				
+		         
+
 				
 				<a class="logo-area" href="index.html"> <img src="<?php bloginfo('template_directory');?>/img/logo.png" class="logo"></a>
 				

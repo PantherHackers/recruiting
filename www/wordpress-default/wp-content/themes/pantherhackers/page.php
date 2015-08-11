@@ -1,6 +1,6 @@
 <?php get_header(); ?>
  
-<div class="wrapper">
+<div class="wrapper single-page">
 	<?php if ( ! have_posts() ) : ?>
 	        <h1>Not Found</h1>
 	            <p>Apologies, but no results were found for the requested archive. Perhaps searching will help find a related post</p>
