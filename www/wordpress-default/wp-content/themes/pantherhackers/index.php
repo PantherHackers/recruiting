@@ -14,11 +14,11 @@
 				<h2 class="heading top-heading">Blog</h2>
 				<?php $numberOfPosts = 6; ?>
 			<?php endif; ?>
-			fdfd
 			<div <?php if(is_home()){ echo 'class="theme-light"'; }?>>
 				<div class="blog-posts clearfix">
 					<?php 	
-						    $recent_posts = get_posts(array('numberposts' => $numberOfPosts));
+							$recent_posts = get_posts(array('numberposts' => $numberOfPosts));
+						    
 							for($i=0; count($recent_posts) > $i; $i++):
 							$post = $recent_posts[$i];
 					?>

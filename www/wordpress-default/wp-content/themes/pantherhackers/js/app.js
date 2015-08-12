@@ -26,4 +26,4 @@ $('.mobile-top-nav-area .close-button').click(function () {
 	$('.mobile-top-nav-area').css('display', 'none');
 });
 
-$('.single-page').css('min-height', (window.innerHeight - $('.top-page-header ').height() - $('footer').height()) + "px");
+$('.single-page, .main-content').css('min-height', (window.innerHeight - $('.top-page-header ').height() - $('footer').height()) + "px");
