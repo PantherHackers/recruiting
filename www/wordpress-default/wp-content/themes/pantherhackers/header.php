@@ -66,15 +66,16 @@
 		</div>
 			<div class="<?php if (is_home()){ echo "overlay-bottom"; }?> wrapper clearfix">
 				<div class="navigation-area">
-					<?php 
-					 wp_nav_menu(
-						 array( 
-							  'menu' => 'mainnav', 'menu_class' => 'navigation',
-							  'menu_id' => 'navigation', 'container' => false,
-							  'theme_location' => 'primary', 'show_home' => ''
-							  )
-					); 
-					 ?>
+					<ul class="navigation">
+					<?php
+						$menuItems = wp_get_nav_menu_items("mainnav", array());
+						for($i=0; count($menuItems) > $i; $i++):
+						$item =  $menuItems[$i];
+					?>
+						<li><a href="<?php echo $item->url; ?>"> <?php echo $item->title; ?> </a></li>
+					 <?php endfor; ?>
+					 <li><a href="index.html">Blog</a>
+					 </ul>
 				</div>
 				
 				<a class="logo-area" href="<?php echo get_home_url(); ?>"> <img src="<?php bloginfo('template_directory');?>/img/logo.png" class="logo"></a>
