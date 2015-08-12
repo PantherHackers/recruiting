@@ -9,7 +9,7 @@
 	<?php while ( have_posts() ) : the_post(); ?>
 		
 		<h2 class="heading top-heading"><?php the_title(); ?></h2>
-			
+		<?php echo get_post_type(get_the_ID()); ?>
 		<div class="page-content">
 			<?php the_content('Read More'); ?>
 		</div>

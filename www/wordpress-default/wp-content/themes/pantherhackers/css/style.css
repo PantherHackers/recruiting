@@ -534,7 +534,7 @@ img{
 	width:100%;
 }
 
-.post-info.overlay-bottom{
+.post-image-area .post-info.overlay-bottom{
 	position:absolute;
     left: 0;
 	right: 0;
@@ -544,11 +544,7 @@ img{
 	text-align: center;
 }
 
-.post-info.post-info-no-image .title{
-	font-size:3em;
-}
-
-.post-info .title{
+.post-image-area .title{
 	font-size:5em;
 }
 
