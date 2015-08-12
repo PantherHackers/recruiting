@@ -15,7 +15,7 @@
 							<p class="title"><?php the_title(); ?></p>
 							<p class="excerpt"><?php the_excerpt(); ?></p>
 							<p class="text-muted text-small"> <?php time_since(the_date()); ?></p>
-							<p><button class="btn"> Read More </button></p>
+							<p><a href="<?php the_guid(); ?>" class="btn"> Read More </a></p>
 						</figcaption>
 					</a>
 				</figure>
