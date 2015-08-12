@@ -20,6 +20,50 @@
 		<?php endif; ?>
 		
 		<header class="top-page-header <?php if (is_home()){ echo "home-page-header"; }?>">
+			<div class="overlay-group mobile-top-nav-area">
+			<div class="overlay-top"></div>
+			<div class="overlay-bottom mobile-top-nav">
+				<p class="close-button"><i class="fa fa-times"></i></p>
+				
+				<p><a href="index.html">Home</a></p>
+				<p><a href="about.html">About</a></p>
+				<hr class="separator"/>
+				
+				<div data-collapse="accordion">	
+					<p>Events </p>
+					<ul>
+						<li><a href="events.html">All</a></li>
+						<li><a href="events.html">Workshops</a></li>
+						<li><a href="events.html">Hackathons</a></li>
+						<li><a href="events.html">Press</a></li>
+					</ul>
+					<p>Blog</p>
+					<ul>
+						<li><a href="blog.html">All</a></li>
+						<li><a href="blog.html">Category</a></li>
+						<li><a href="blog.html">Category</a></li>
+						<li><a href="blog.html">Category</a></li>
+						<li><a href="blog.html">Category</a></li>
+					</ul>
+					<p>Projects</p>
+					<ul>
+						<li><a href="projects.html">All</a></li>
+						<li><a href="projects.html">Personal</a></li>
+						<li><a href="projects.html">Hackathon</a></li>
+					</ul>
+				</div>
+				
+				<p class="text-small text-center">Stay in touch</p>
+				<p class="social-media">
+					<a href="#"><i class="fa fa-facebook"></i></a> 
+					<a href="#"><i class="fa fa-twitter"></i></a> 
+					<a href="#"> <i class="fa fa-instagram"></i></a>
+					<a href="#"> <i class="fa fa-vine"></i></a>
+					<a href="#"> <i class="fa fa-youtube-play"></i></a>
+					<a href="#"> <i class="fa fa-envelope-o"></i></a>
+				</p>
+			</div>
+		</div>
 			<div class="<?php if (is_home()){ echo "overlay-bottom"; }?> wrapper clearfix">
 				<div class="navigation-area">
 					<?php 
@@ -33,10 +77,7 @@
 					 ?>
 				</div>
 				
-		         
-
-				
-				<a class="logo-area" href="index.html"> <img src="<?php bloginfo('template_directory');?>/img/logo.png" class="logo"></a>
+				<a class="logo-area" href="<?php echo get_home_url(); ?>"> <img src="<?php bloginfo('template_directory');?>/img/logo.png" class="logo"></a>
 				
 				<div class="social-media-area">
 					<ul>

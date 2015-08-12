@@ -16,3 +16,7 @@ function time_since($dateString){
 	$date = new DateTime($dateString); 
   	echo $date->diff(new DateTime())->format("%a days %h hours ago");
 }
+
+function dd($exp){
+	die(var_dump($exp));
+}
