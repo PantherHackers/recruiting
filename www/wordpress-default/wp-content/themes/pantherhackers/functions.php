@@ -26,11 +26,11 @@ add_action('init', 'register_custom_post_types');
 
 function register_meta_boxes() {
     add_meta_box( 'event_meta_box',
-        __( 'Event Info', 'myplugin_textdomain' ),
-        'event_meta_box_content',
-        'Event',
-        'normal',
-        'high'
+		__( 'Event Info', 'myplugin_textdomain' ),
+		'event_meta_box_content',
+		'Event',
+		'normal',
+		'high'
     );
 }
 add_action( 'add_meta_boxes', 'register_meta_boxes' );
@@ -89,7 +89,6 @@ function event_info_box_save( $post_id ) {
 	}
 		
 }
-
 add_action( 'save_post', 'event_info_box_save' );
 
 function time_since($dateString){

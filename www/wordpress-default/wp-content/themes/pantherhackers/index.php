@@ -26,7 +26,7 @@
 									<img src="http://lorempixel.com/350/200" alt="">
 									<a href="<?php echo $post->guid;?>">
 										<figcaption>
-											<p class="category"><?php echo get_the_category_by_ID($post->ID); ?></p>
+											<p class="category"><?php echo get_the_category($post->ID)[0]->name; ?></p>
 											<p class="title"><?php echo $post->post_title ?></p>
 											<p class="excerpt"><?php echo $post->post_excerpt ?></p>
 											<p class="text-muted text-small"> <?php time_since($post->post_date); ?></p>
