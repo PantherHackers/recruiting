@@ -7,7 +7,7 @@
 			</div>
 		<?php endif; ?>
 		
-		<div class="wrapper">
+		<div class="wrapper <?php if(!is_home()){ echo 'non-home-container';}?>">
 			<?php if(is_home()): ?>
 				<?php $numberOfPosts = 3; ?>
 			<?php else: ?>

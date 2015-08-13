@@ -25,34 +25,14 @@
 			<div class="overlay-bottom mobile-top-nav">
 				<p class="close-button"><i class="fa fa-times"></i></p>
 				
-				<p><a href="index.html">Home</a></p>
-				<p><a href="about.html">About</a></p>
-				<hr class="separator"/>
+				<?php
+					$menuItems = wp_get_nav_menu_items("mainnav", array());
+					for($i=0; count($menuItems) > $i; $i++):
+					$item =  $menuItems[$i];
+				?>
+					<p><a href="<?php echo $item->url; ?>"> <?php echo $item->title; ?> </a></p>
 				
-				<div data-collapse="accordion">	
-					<p>Events </p>
-					<ul>
-						<li><a href="events.html">All</a></li>
-						<li><a href="events.html">Workshops</a></li>
-						<li><a href="events.html">Hackathons</a></li>
-						<li><a href="events.html">Press</a></li>
-					</ul>
-					<p>Blog</p>
-					<ul>
-						<li><a href="blog.html">All</a></li>
-						<li><a href="blog.html">Category</a></li>
-						<li><a href="blog.html">Category</a></li>
-						<li><a href="blog.html">Category</a></li>
-						<li><a href="blog.html">Category</a></li>
-					</ul>
-					<p>Projects</p>
-					<ul>
-						<li><a href="projects.html">All</a></li>
-						<li><a href="projects.html">Personal</a></li>
-						<li><a href="projects.html">Hackathon</a></li>
-					</ul>
-				</div>
-				
+				<?php endfor; ?>
 				<p class="text-small text-center">Stay in touch</p>
 				<p class="social-media">
 					<a href="#"><i class="fa fa-facebook"></i></a> 
