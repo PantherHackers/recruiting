@@ -66,7 +66,7 @@ img{
 }
 
 .wrapper{
-	max-width: 1100px;
+	max-width: 1200px;
 	margin:0 auto;
 	padding:15px 50px;
 }
@@ -111,7 +111,7 @@ img{
 
 .top-page-header .navigation-area{
 	margin:18px 0;
-	width: 28%;
+	width: 32%;
 }
 .top-page-header .navigation{
 	text-align: left;
@@ -123,8 +123,8 @@ img{
 }
 
 .top-page-header .navigation li a{
-	font-size:1.1em;
-	padding:7px 12px;
+	font-size:1em;
+	padding:7px 7px;
 }
 
 .top-page-header .navigation li a.active{
@@ -134,11 +134,10 @@ img{
 .top-page-header .navigation li a:hover{
 	color:#fff;
 	background-color:#444;
-	font-size:1.11em;
 }
 
 .top-page-header .logo-area{
-	width: 44%;
+	width: 36%;
 	padding:8px 0;
 }
 
@@ -149,7 +148,7 @@ img{
 
 .top-page-header .social-media-area{
 	margin:18px 0;
-	width: 28%;
+	width: 32%;
 	text-align: right;
 }
 

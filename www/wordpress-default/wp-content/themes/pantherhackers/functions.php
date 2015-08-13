@@ -33,6 +33,7 @@ function register_custom_post_types(){
 		'public' => false,
 		'show_ui' => true,
 		'show_in_admin_bar' => true,
+		'supports' => array(''),
 		'menu_position' => 5
 	));
 }
@@ -40,12 +41,21 @@ add_action('init', 'register_custom_post_types');
 
 function register_meta_boxes() {
     add_meta_box( 'event_meta_box',
-		__( 'Event Info', 'myplugin_textdomain' ),
+		__( 'Event Info', 'domain' ),
 		'event_meta_box_content',
 		'Event',
 		'normal',
 		'high'
     );
+	
+	add_meta_box('member_meta_box',
+		__('Member Info', 'domain'),
+		'member_meta_box_content',
+		'Member',
+		'normal',
+		'high'
+		);
+			
 }
 add_action( 'add_meta_boxes', 'register_meta_boxes' );
 
@@ -78,6 +88,20 @@ function event_meta_box_content($post){
 	
 }
 
+function member_meta_box_content($post){
+	echo "<label> Name: </label>";
+	echo "<p><b>".get_post_meta($post->ID, 'name', true).'</b></p>';
+	
+	echo "<label> Panther ID: </label>";
+	echo "<p><b>".get_post_meta($post->ID, 'panther_id', true).'</b></p>';
+	
+	echo "<br />";
+	
+	echo "<label> Programming Experience: </label>";
+	echo "<p><b>".get_post_meta($post->ID, 'experience', true).'</b></p>';
+	
+}
+
 function event_info_box_save( $post_id ) {
 	// if the first isn't set, why would the others be?	
 	if($_POST && isset($_POST['event_month'])){
@@ -104,6 +128,41 @@ function event_info_box_save( $post_id ) {
 		
 }
 add_action( 'save_post', 'event_info_box_save' );
+
+function member_save(){
+	if (!wp_verify_nonce( $_POST['member_save_content_nonce'], 'secretkeywordissecretkeywordpantherhackers') )
+		return;
+		
+	$name = sanitize_text_field($_POST['user_name']);
+	$panther_id = sanitize_text_field($_POST['panther_id']);
+	$experience = sanitize_text_field(@$_POST['experience']);
+	
+	if(empty($name))
+		return array('error' => "Please fill in your name.");
+		
+	if(empty($panther_id))
+		return array('error' => "Please fill in your panther id.");
+		
+	if(empty($experience))
+		return array('error' => "Please fill in your experience.");
+		
+	global $user_ID;
+	$new_post = array(
+		'post_title' => $name,
+		'post_content' => '',
+		'post_status' => 'publish',
+		'post_date' => date('Y-m-d H:i:s'),
+		'post_author' => $user_ID,
+		'post_type' => 'Member'
+	);
+	
+	$post_id = wp_insert_post($new_post);
+	update_post_meta($post_id, 'name', $name);
+	update_post_meta($post_id, 'panther_id', $panther_id);
+	update_post_meta($post_id, 'experience', $experience);
+	
+	return array('success' => 'Thanks for signing up!');
+}
 
 function time_since($dateString){
 	$date = new DateTime($dateString); 
