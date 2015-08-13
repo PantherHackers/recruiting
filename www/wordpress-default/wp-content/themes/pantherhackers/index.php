@@ -7,6 +7,7 @@
 			</div>
 		<?php endif; ?>
 		
+		<div <?php if(is_home()){ echo 'class="theme-light"'; }?>>
 		<div class="wrapper <?php if(!is_home()){ echo 'non-home-container';}?>">
 			<?php if(is_home()): ?>
 				<?php $numberOfPosts = 3; ?>
@@ -14,7 +15,7 @@
 				<h2 class="heading top-heading">Blog</h2>
 				<?php $numberOfPosts = 6; ?>
 			<?php endif; ?>
-			<div <?php if(is_home()){ echo 'class="theme-light"'; }?>>
+			
 				<div class="blog-posts clearfix">
 					<?php 	
 							$recent_posts = get_posts(array('numberposts' => $numberOfPosts));
@@ -29,7 +30,7 @@
 											<p class="category"><?php echo get_the_category($post->ID)[0]->name; ?></p>
 											<p class="title"><?php echo $post->post_title ?></p>
 											<p class="excerpt"><?php echo $post->post_excerpt ?></p>
-											<p class="text-muted text-small"> <?php time_since($post->post_date); ?></p>
+											<p class="text-muted text-small"> <?php echo time_since($post->post_date); ?></p>
 											<p><a href="<?php echo $post->guid ?>" class="btn"> Read More </a></p>
 										</figcaption>
 									</a>

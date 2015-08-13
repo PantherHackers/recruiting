@@ -1,5 +1,11 @@
 <?php 
 
+function setup(){
+	add_theme_support('post-thumbnails', array('post', 'page'));
+}
+
+add_action('init', 'setup');
+
 function register_menus(){
 
     register_nav_menus(array(
@@ -20,6 +26,14 @@ function register_custom_post_types(){
 		'show_in_admin_bar' => true,
 		'menu_position' => 5,
 		'has_archive' => true
+	));
+	
+	register_post_type("Member", array(
+		'label' => 'Members',
+		'public' => false,
+		'show_ui' => true,
+		'show_in_admin_bar' => true,
+		'menu_position' => 5
 	));
 }
 add_action('init', 'register_custom_post_types');
@@ -81,11 +95,11 @@ function event_info_box_save( $post_id ) {
 			return;
 		}
 		
-		update_post_meta( $post_id,'month', $_POST['event_month']);
-		update_post_meta( $post_id,'date', $_POST['event_date']);
-		update_post_meta( $post_id,'start_time', $_POST['event_start_time']);
-		update_post_meta( $post_id,'end_time', $_POST['event_end_time']);
-		update_post_meta( $post_id,'location', $_POST['event_location']);	
+		update_post_meta( $post_id, 'month' , $_POST['event_month']);
+		update_post_meta( $post_id, 'date' , $_POST['event_date']);
+		update_post_meta( $post_id, 'start_time' , $_POST['event_start_time']);
+		update_post_meta( $post_id, 'end_time' , $_POST['event_end_time']);
+		update_post_meta( $post_id, 'location' , $_POST['event_location']);	
 	}
 		
 }

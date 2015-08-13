@@ -20,7 +20,7 @@
 		<div class="wrapper <?php if(has_post_thumbnail()){ echo 'post-content'; } ?>">
 			<?php if(!has_post_thumbnail()): ?>
 				<h2 class="heading top-heading"><?php the_title(); ?></h2>
-				<p class="text-muted"><?php time_since(the_date()) ?></p>
+				<p class="text-muted"><?php the_date(); ?></p>
 			<?php endif; ?>
 			<?php the_content(); ?>
 		</div>
